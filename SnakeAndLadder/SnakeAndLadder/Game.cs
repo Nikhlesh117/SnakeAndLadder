@@ -17,6 +17,23 @@ namespace SnakeAndLadder
             Random random = new Random();
             dice = random.Next(1, 7);
             Console.WriteLine("\nPlayer rolls dice :" + dice);
+            int option;
+            option = random.Next(0, 3);
+            switch (option)
+            {
+                case 0:
+                    Console.WriteLine("No Play");
+                    break;
+                case 1:
+                    Console.WriteLine("Ladder");
+                    position += dice;
+                    break;
+                case 2:
+                    Console.WriteLine("Snake");
+                    position -= dice;
+                    break;
+            }
+            Console.WriteLine("Player Current Position : " + position);
         }
     }
 }
