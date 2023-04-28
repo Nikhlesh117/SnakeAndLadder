@@ -11,9 +11,12 @@ namespace SnakeAndLadder
         public void SnakeAndLadderGame()
         {
             int position = 0;
-
-            Console.WriteLine("\nWelcome Player1");
-            Console.WriteLine("Player1 at position : " + position);
+            Console.WriteLine("\nWelcome Player");
+            Console.WriteLine("\nPlayer at position : " + position);
+            int dice;
+            Random random = new Random();
+            dice = random.Next(1, 7);
+            Console.WriteLine("\nPlayer rolls dice :" + dice);
         }
     }
 }
