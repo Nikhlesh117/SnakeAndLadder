@@ -27,7 +27,11 @@ namespace SnakeAndLadder
                         break;
                     case 1:
                         Console.WriteLine("Ladder");
-                        position += dice;                      
+                        position += dice;
+                        if (position > 100)
+                        {
+                            position = temp;
+                        }
                         break;
                     case 2:
                         Console.WriteLine("Snake");
