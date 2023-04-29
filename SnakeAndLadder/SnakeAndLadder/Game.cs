@@ -12,13 +12,16 @@ namespace SnakeAndLadder
         {
             int position = 0;
             int temp = 0;
+            int count = 0;
             Console.WriteLine("\nWelcome Player");
             Console.WriteLine("Player at position : " + position);
             Random random = new Random();
             while (position < 100)
             {
                 int dice = random.Next(1, 7);
+                count++;
                 Console.WriteLine("\nPlayer rolls dice :" + dice);
+                Console.WriteLine("\nNumber of dice roll :" + count);
                 int option = random.Next(0, 3);
                 switch (option)
                 {
@@ -45,6 +48,7 @@ namespace SnakeAndLadder
                 Console.WriteLine("Player Current Position : " + position);
             }
             Console.WriteLine("Player Position : " + position);
+            Console.WriteLine("\nNumber of dice roll :" + count);
         }        
     } 
 }
